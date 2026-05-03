@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beeze store – Game Diamond Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Noto+Sans+Khmer:wght@400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/app.js"></script>
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <!-- <div class="ticker-label">🔴 LIVE</div> -->
+  <div class="ticker-track" id="ticker">
+    <span>Mobile Legends Diamonds</span>
+    <span>Free Fire Diamonds</span>
+    <span>PUBG UC</span>
+    <span>Genshin Genesis Crystals</span>
+    <span>Honor of Kings Tokens</span>
+    <span>Magic Chess Diamonds</span>
+    <span>ដំណើរការ 24ម៉ោង</span>
+    <span>Fast Delivery</span>
+    <span>Mobile Legends Diamonds</span>
+    <span>Free Fire Diamonds</span>
+    <span>PUBG UC</span>
+    <span>Genshin Genesis Crystals</span>
+    <span>Honor of Kings Tokens</span>
+    <span>Magic Chess Diamonds</span>
+    <span>ដំណើរការ 24ម៉ោង</span>
+    <span>Fast Delivery</span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <a class="logo" href="#">
+    <div class="logo-icon"><img src="assets/logo bee.jpg"></div>
+    <div class="logo-text">BEEZE<span>STORE</span></div>
+  </a>
+  <nav>
+    <a href="#" class="active">Home</a>
+    <a href="#games" >Games</a>
+    <a href="#how" >How It Works</a>
+    <a href="#payment" >Payment</a>
+  </nav>
+  <div class="header-right">
+    <button class="btn-support">💬 Support</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">⚡ INSTANT DELIVERY · 24/7</div>
+  <h1>TOP UP YOUR<br /><span class="hl">GAME DIAMONDS</span><br />IN SECONDS</h1>
+  <p>បញ្ចូលពេជ្រហ្គេមច្រើនប្រភេទ · ដំណើរការ 24ម៉ោង · ដាក់ភ្លាមបានភ្លាម</p>
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-value">50K<span>+</span></div>
+      <div class="stat-label">ORDERS</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">10<span>+</span></div>
+      <div class="stat-label">GAMES</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">24<span>/7</span></div>
+      <div class="stat-label">SUPPORT</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value"><span>#</span>1</div>
+      <div class="stat-label">IN KH</div>
+    </div>
+  </div>
+</div>
+
+<!-- GAMES SECTION -->
+<div class="section" id="games">
+  <div class="section-header">
+    <div class="section-title">CHOOSE YOUR GAME</div>
+    <div class="section-line"></div>
+    <div class="section-tag">ALL GAMES</div>
+  </div>
+
+  <div class="notice">
+    <div class="notice-icon">💡</div>
+    <div class="notice-text">
+      <strong>How to top up:</strong> Select your game below, enter your Player/User ID, choose a diamond package, and complete payment. Your diamonds will be delivered <strong>instantly</strong>.
+    </div>
+  </div>
+
+  <div class="game-grid">
+
+     <a class="game-card coming-soon" style="animation-delay:.55s">
+      <div class="game-thumb g-pre">
+      
+      </div>
+      <div class="game-info">
+        <div class="game-name">Pre Order</div>
+        <div class="game-desc">Coming Soon</div>
+      </div>
+    </a>
+    
+    <a class="game-card" href="#" onclick="openModal('mlbb'); return false;" style="animation-delay:.05s">
+      <div class="game-thumb g-mlbb">
+        <img src="assets/mobile cam.webp" alt="">
+      </div>
+      <div class="game-info">
+        <div class="game-name">Mobile Legends</div>
+        <div class="game-desc">Diamonds · MLBB</div>
+      </div>
+    </a>
+
+    <a class="game-card" href="#" onclick="openModal('mlbb-ph'); return false;" style="animation-delay:.1s">
+      <div class="game-thumb g-mlbb">
+        <img src="assets/mobile ph.webp" alt="">
+      </div>
+      <div class="game-info">
+        <div class="game-name">MLBB Philippines</div>
+        <div class="game-desc">Diamonds · PH</div>
+      </div>
+    </a>
+
+    <a class="game-card" href="#" onclick="openModal('ff'); return false;" style="animation-delay:.15s">
+        <div class="game-thumb g-ff">
+          <img src="assets/free fire.webp" alt="">
+        </div>
+      <div class="game-info">
+        <div class="game-name">Free Fire</div>
+        <div class="game-desc">Diamonds · FF</div>
+      </div>
+    </a>
+
+    <a class="game-card" href="#" onclick="openModal('pubg'); return false;" style="animation-delay:.2s">
+      <div class="game-thumb g-pubg">
+        <img src="assets/pubgmobile.webp" alt="">
+      </div>
+      <div class="game-info">
+        <div class="game-name">PUBG Mobile</div>
+        <div class="game-desc">UC Credits</div>
+      </div>
+    </a>
+
+    <a class="game-card" href="#" onclick="openModal('hok'); return false;" style="animation-delay:.3s">
+      <div class="game-thumb g-hok">
+        <img src="assets/honor of king.webp" alt="">
+      </div>
+      <div class="game-info">
+        <div class="game-name">Honor of Kings</div>
+        <div class="game-desc">Tokens</div>
+      </div>
+    </a>
+
+    <a class="game-card" href="#" onclick="openModal('mc'); return false;" style="animation-delay:.35s">
+      <div class="game-thumb g-mc">
+        <img src="assets/magic chess.webp" alt="">
+      </div>
+      <div class="game-info">
+        <div class="game-name">Magic Chess</div>
+        <div class="game-desc">Diamonds</div>
+      </div>
+    </a>
+
+    <a class="game-card" href="#" onclick="openModal('zepeto'); return false;" style="animation-delay:.4s">
+      <div class="game-thumb g-zepeto">
+        <img src="assets/zepeto.webp" alt="">
+      </div>
+      <div class="game-info">
+        <div class="game-name">Zepeto</div>
+        <div class="game-desc">ZEM Coins</div>
+      </div>
+    </a>
+
+    <a class="game-card" href="#" onclick="openModal('bs'); return false;" style="animation-delay:.45s">
+      <div class="game-thumb g-bs">
+        <img src="assets/blood strike.webp" alt="">
+      </div>
+      <div class="game-info">
+        <div class="game-name">Blood Strike</div>
+        <div class="game-desc">Diamonds</div>
+      </div>
+    </a>
+
+    <a class="game-card coming-soon" style="animation-delay:.5s">
+      <div class="game-thumb g-wwm">
+        <img src="assets/where winds meet.webp" alt="">
+      </div>
+      <div class="game-info">
+        <div class="game-name">Where Winds Meet</div>
+        <div class="game-desc">Coming Soon</div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="section" id="how">
+  <div class="section-header">
+    <div class="section-title">HOW IT WORKS</div>
+    <div class="section-line"></div>
+    <div class="section-tag">3 STEPS</div>
+  </div>
+  <div class="steps">
+    <div class="step-card" data-n="1" style="animation-delay:.05s">
+      <div class="step-icon">🎮</div>
+      <div class="step-title">Select Game</div>
+      <div class="step-body">ជ្រើសរើសហ្គេមដែលអ្នកចង់បញ្ចូល ពេជ្រ ឬ Credits</div>
+    </div>
+    <div class="step-card" data-n="2" style="animation-delay:.1s">
+      <div class="step-icon">🆔</div>
+      <div class="step-title">Enter Your ID</div>
+      <div class="step-body">បញ្ចូល Player ID ឬ User ID របស់អ្នក ដើម្បីផ្ញើពេជ្រ</div>
+    </div>
+    <div class="step-card" data-n="3" style="animation-delay:.15s">
+      <div class="step-icon">💳</div>
+      <div class="step-title">Choose Package</div>
+      <div class="step-body">ជ្រើសរើសកញ្ចប់ ហើយបង់ប្រាក់ងាយស្រួល</div>
+    </div>
+    <div class="step-card" data-n="4" style="animation-delay:.2s">
+      <div class="step-icon">⚡</div>
+      <div class="step-title">Instant Delivery</div>
+      <div class="step-body">ដាក់ភ្លាមបានភ្លាម! ពេជ្រនឹងបញ្ជូនទៅគណនី របស់អ្នកភ្លាមៗ</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAYMENT -->
+<div class="section" id="payment">
+  <div class="section-header">
+    <div class="section-title">PAYMENT METHODS</div>
+    <div class="section-line"></div>
+    <div class="section-tag">ACCEPTED</div>
+  </div>
+  <div class="payment-strip">
+    <div class="payment-title">PAY WITH</div>
+    <div class="payment-logos">
+      <div class="pay-chip"><span class="dot"></span> ABA Bank</div>
+      <div class="pay-chip"><span class="dot y"></span> KHQR</div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">BEEZE<span>STORE</span>.COM</div>
+  <div class="footer-links">
+    <a href="#">Terms & Policy</a>
+    <a href="#">Contact</a>
+    <a href="#">Telegram</a>
+    <a href="#">Facebook</a>
+  </div>
+  <div class="footer-copy">© 2026 BeezeStore · All rights reserved</div>
+</footer>
+
+<!-- TOP-UP MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    <div class="modal-game-icon g-mlbb" id="modalIcon">⚔️</div>
+    <h2 id="modalTitle">Mobile Legends</h2>
+    <div class="modal-sub" id="modalSub">Enter your ID to top up Diamonds instantly</div>
+
+    <div class="form-group">
+      <label class="form-label">PLAYER ID</label>
+      <input class="form-input" type="text" placeholder="e.g. 123456789" id="playerId" />
+    </div>
+    <div class="form-group">
+      <label class="form-label">SERVER ID (if required)</label>
+      <input class="form-input" type="text" placeholder="e.g. 1234" id="serverId" />
+    </div>
+
+    <label class="form-label">SELECT PACKAGE</label>
+    <div class="packages" id="packages"></div>
+
+    <button class="btn-buy" onclick="confirmOrder()">⚡ TOP UP NOW</button>
+  </div>
+</div>
+
+</body>
+</html>
